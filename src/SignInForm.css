@@ -1,0 +1,122 @@
+/* Full-page container for the sign-in form */
+.signin-container {
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    height: 100vh; /* Full viewport height */
+    position: relative;
+    overflow: hidden;
+    margin-inline: auto;
+
+  }
+  
+  /* Background image styling */
+  .signin-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('/public/IN-en-20241118-TRIFECTA-ad0df40f-43f7-41f3-bc3d-1b1ead53e86c_large.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+    filter: brightness(0.9); /* Darkens the background for better text readability */
+  }
+  
+  /* Centered box for the form */
+  .signin-box {
+    position: relative;
+    z-index: 1; /* Ensures the form is above the background */
+    background: rgba(0, 0, 0, 0.85); /* Transparent black background */
+    padding: 50px 40px;
+    border-radius: 8px;
+    text-align: center;
+    width: 90%; /* Fallback for smaller screens */
+    max-width: 400px; /* Limit the width on larger screens */
+    color: white;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5); /* Subtle shadow for better focus */
+margin-inline: auto;
+margin-top: 50px;
+  
+  }
+  
+  /* Input fields styling */
+  .signin-box input {
+    display: block;
+    width: 100%;
+    margin: 15px 0;
+    padding: 12px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background: #222;
+    color: white;
+    font-size: 16px;
+  }
+  
+  /* Sign-in button styling */
+  .signin-btn {
+    background-color: #e50914;
+    color: white;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .signin-btn:hover {
+    background-color: #f40612;
+  }
+  
+  /* Links for "Forgot password?" and "Sign up now" */
+  .signin-links {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  .forgot-password,
+  .signup-link {
+    color: #b3b3b3;
+    text-decoration: none;
+  }
+  
+  .forgot-password:hover,
+  .signup-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Recaptcha disclaimer */
+  .recaptcha-disclaimer {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #8c8c8c;
+  }
+  
+  .recaptcha-disclaimer .learn-more {
+    color: #0071eb;
+    text-decoration: none;
+  }
+  
+  .recaptcha-disclaimer .learn-more:hover {
+    text-decoration: underline;
+  }
+  
+  /* Close button styling */
+  .close-btn {
+    margin-top: 20px;
+    background-color: transparent;
+    color: #e50914;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration: underline;
+  }
+  
+  .close-btn:hover {
+    color: #f40612;
+  }
+  
